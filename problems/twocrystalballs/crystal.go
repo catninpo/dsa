@@ -17,8 +17,7 @@ func Solve(n []bool) int {
 		}
 	}
 
-	// TODO: Need to walk up not down the array.
-	for j := i - 1; j >= i-jump; j-- {
+	for j := i - jump; j < i; j++ {
 		if n[j] {
 			return j
 		}
