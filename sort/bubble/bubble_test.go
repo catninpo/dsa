@@ -28,7 +28,7 @@ func TestSort(t *testing.T) {
 
 			if !reflect.DeepEqual(tc.Output, tc.Input) {
 				t.Fatalf("[\u2717] post-sorted array did not match expected: got=%v want=%v",
-					tc.Output, tc.Input)
+					tc.Input, tc.Output)
 			}
 			t.Logf("[\u2713] post-sorted array matched expected value")
 		})
